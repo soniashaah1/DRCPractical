@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.drcpractical.FirstFragment"
+        android:label="@string/drc_practical"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_PlacesFragment"
+            app:destination="@id/PlacesFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_GIFFragment"
+            app:destination="@id/GIFFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PlacesFragment"
+        android:name="com.example.drcpractical.PlacesFragment"
+        android:label="@string/places_list"
+        tools:layout="@layout/places_fragment">
+
+        <action
+            android:id="@+id/action_PlacesFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_PlacesFragment_to_MapFragment"
+            app:destination="@id/mapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GIFFragment"
+        android:name="com.example.drcpractical.GIFFragment"
+        android:label="@string/gif_list"
+        tools:layout="@layout/gif_fragment">
+
+        <action
+            android:id="@+id/action_GIFFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.drcpractical.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/map_fragment"/>
+</navigation>

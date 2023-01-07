@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DRCPractical</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drc_practical">DRC Practical</string>
+    <string name="places_list">Places List</string>
+    <string name="gif_list">GIF List</string>
+    <string name="title">DRC Practical</string>
+</resources>
